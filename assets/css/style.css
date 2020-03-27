@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.anime{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+#ball1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: red;
+    border-radius: 50%;
+    transition: left 3s ease-in;
+}
+
+#ball2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    transition: left 1s ease;
+    
+}
+
+.anime:active #ball1{
+    left: 200px;
+    transition: left .5s ease-in;
+    
+
+
+}
+
+.anime:active #ball2{
+    left: 90%;
+    transition-delay:  0.5s ;
+}
